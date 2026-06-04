@@ -1,6 +1,6 @@
 import style from "./Button.module.css";
 
-export default function ButtonPrimary({
+export default function ButtonSecondary({
   text,
   styleName,
 }: {
@@ -9,7 +9,7 @@ export default function ButtonPrimary({
 }) {
   return (
     <button
-      className={`btn rounded-0 px-4 py-1 ${styleName === "primaryOrange" ? style.primaryOrange : style.primaryLight}`}
+      className={`btn rounded-0 px-4 py-1 ${styleName === "secondaryBlack" ? style.secondaryBlack : style.secondaryWhite}`}
     >
       {text}
     </button>
