@@ -1,0 +1,8 @@
+.hero{
+    height: 100vh;
+    background-image: url("/public/images/hero-cover-accueil.png");
+}
+
+.hero[data-route="/"] {
+    background-image: url("/public/images/hero-cover-accueil.png");
+}
