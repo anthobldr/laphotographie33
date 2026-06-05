@@ -1,3 +1,7 @@
+.primaryOrange, .primaryLight, .secondaryWhite, .secondaryBlack {
+  letter-spacing: 2px;
+}
+
 .primaryOrange {
   background-color: #e99981;
 }

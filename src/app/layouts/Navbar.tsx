@@ -40,8 +40,8 @@ export default function Navbar(){
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarScroll">
-                    <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                <div className="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                    <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                         {nav.map((list) =>
                         <li key={list.id} className="nav-item">
                             <a className="nav-link active" href={list.href}>{list.name}</a>
@@ -49,7 +49,7 @@ export default function Navbar(){
                         )}
                     </ul>
                 </div>
-                <ButtonSecondary text="CONTACTER-MOI" />
+                <ButtonSecondary text="CONTACTEZ-MOI" styleName="secondaryBlack"/>
             </div>
         </nav>
     )
