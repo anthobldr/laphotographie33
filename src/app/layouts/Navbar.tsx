@@ -43,13 +43,15 @@ export default function Navbar(){
                 <div className="collapse navbar-collapse justify-content-center" id="navbarScroll">
                     <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
                         {nav.map((list) =>
-                        <li key={list.id} className="nav-item">
+                        <li key={list.id} className={`nav-item ${style.navItem}`}>
                             <a className="nav-link active" href={list.href}>{list.name}</a>
                         </li>
                         )}
                     </ul>
                 </div>
-                <ButtonSecondary text="CONTACTEZ-MOI" styleName="secondaryBlack"/>
+                <div className="d-none d-lg-block">
+                    <ButtonSecondary text="CONTACTEZ-MOI" styleName="secondaryBlack"/>
+                </div>
             </div>
         </nav>
     )
