@@ -8,6 +8,14 @@ export default function Footer() {
     { id: 5, name: "Blog", href: "/Blog" },
     { id: 6, name: "FAQ", href: "/FAQ" },
   ];
+
+  const theme = [
+    { id: 0, name: "Mariage", href: "/Mariage" },
+    { id: 1, name: "Maternité", href: "/Mariage" },
+    { id: 2, name: "Portraits", href: "/Mariage" },
+    { id: 3, name: "Mariage", href: "/Mariage" },
+    { id: 4, name: "Mariage", href: "/Mariage" },
+  ];
   return (
     <>
       <footer>
