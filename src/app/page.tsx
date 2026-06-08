@@ -1,11 +1,13 @@
 import Hero from "./layouts/Hero";
-import BentoGallery from "./components/BentoGallery/BentoGallery";
+import Partenaire from "./components/accueil/Partenaire";
+import Bento from "./components/accueil/Bento";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <BentoGallery />
+      <Partenaire />
+      <Bento />
     </>
 );
 }

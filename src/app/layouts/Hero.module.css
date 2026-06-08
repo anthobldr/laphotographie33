@@ -1,11 +1,9 @@
 .hero {
     min-height: 100vh;
-
     background-image: url("/images/hero-cover-accueil.png");
     background-size: cover;
     background-repeat: no-repeat;
-
-    background-position: right center;
+    background-position-y: 25%;
 }
 
 .heroEnLight{
