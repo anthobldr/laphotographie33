@@ -94,7 +94,12 @@ export default function Footer() {
             <ul className="list-unstyled mt-4">
               {nav.map((list) => (
                 <li key={list.id} className="mb-2">
-                  <a href={list.href}>{list.name}</a>
+                  <a
+                    href={list.href}
+                    className={`text-decoration-none text-reset ${style.linkHoverAnimation}`}
+                  >
+                    {list.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -105,7 +110,12 @@ export default function Footer() {
             <ul className="list-unstyled mt-4">
               {theme.map((list) => (
                 <li key={list.id} className="mb-2">
-                  <a href={list.href}>{list.name}</a>
+                  <a
+                    href={list.href}
+                    className={`text-decoration-none text-reset ${style.linkHoverAnimation}`}
+                  >
+                    {list.name}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -115,8 +125,13 @@ export default function Footer() {
             <h4 className={style.footerTitle}>INFOS</h4>
             <ul className="list-unstyled mt-4">
               {info.map((list) => (
-                <li key={list.id} className="mb-2">
-                  <a href={list.href}>{list.name}</a>
+                <li key={list.id} className="mb-2 ">
+                  <a
+                    href={list.href}
+                    className={`text-decoration-none text-reset ${style.linkHoverAnimation}`}
+                  >
+                    {list.name}
+                  </a>
                 </li>
               ))}
             </ul>
