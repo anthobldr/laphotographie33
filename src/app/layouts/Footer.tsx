@@ -65,7 +65,7 @@ export default function Footer() {
               loading="lazy"
             />
 
-            <p className="my-4 pe-4">
+            <p className="my-4 pe-4 fs-6">
               Photographe professionnel à Bordeaux, je capture les émotions et
               les instants qui rendent chaque histoire unique. Mariages,
               baptêmes, événements sportifs, séances canines ou équines : des
@@ -152,7 +152,7 @@ export default function Footer() {
                     alt={list.name}
                     loading="lazy"
                   />
-                  <small>{list.name}</small>
+                  <small className="text-break">{list.name}</small>
                 </li>
               ))}
             </ul>
