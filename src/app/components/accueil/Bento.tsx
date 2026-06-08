@@ -5,7 +5,7 @@ const images = [
   { src: "/images/bento/photo10.png" },
   { src: "/images/bento/photo11.png" },
   { src: "/images/bento/photo12.png" },
-  { src: "/images/bento/photos13.png" },
+  { src: "/images/bento/photo13.png" },
   { src: "/images/bento/photo14.png" },
 ];
 
