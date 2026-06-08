@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
-import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 
 export const metadata: Metadata = {

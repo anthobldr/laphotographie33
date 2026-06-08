@@ -1,4 +1,7 @@
-.primaryOrange, .primaryLight, .secondaryWhite, .secondaryBlack {
+.primaryOrange,
+.primaryLight,
+.secondaryWhite,
+.secondaryBlack {
   font-family: Playfair Display;
   letter-spacing: 2px;
 }
@@ -14,12 +17,13 @@
 .secondaryWhite {
   border-color: white;
   color: white;
-  background-color: black;
+  background-color: transparent;
 }
 
 .secondaryBlack {
   border-color: black;
   color: black;
+  background-color: transparent;
 }
 
 .primaryOrange:hover {
@@ -33,6 +37,7 @@
 .secondaryWhite:hover {
   border-color: black;
   color: black;
+  background-color: white;
 }
 
 .secondaryBlack:hover {

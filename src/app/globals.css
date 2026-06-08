@@ -1,30 +1,41 @@
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('/fonts/PlayfairDisplay.ttf') format('truetype');
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay.ttf") format("truetype");
   font-weight: 400 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Miama';
-  src: url('/fonts/Miama.ttf') format('truetype');
+  font-family: "Miama";
+  src: url("/fonts/Miama.ttf") format("truetype");
   font-weight: 400 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat.ttf") format("truetype");
   font-weight: 400 900;
   font-style: normal;
 }
 
+body {
+  background-color: black;
+}
 
-h1{
-  font-family: 'Playfair Display';
+h1 {
+  font-family: "Playfair Display";
   font-size: 4Opx;
 }
 
-h2{
-  font-family: 'Playfair Display';
+h2 {
+  font-family: "Playfair Display";
+}
+
+p {
+  font-family: "Montserrat";
+  font-size: 16px;
+  @media (min-width: 1000px) {
+    font-size: 24px;
+  }
 }
