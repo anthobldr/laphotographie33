@@ -19,6 +19,23 @@
   font-style: normal;
 }
 
+.PlayfairDisplay {
+  font-family: "Playfair Display";
+}
+
+.Miama {
+  font-family: "Miama";
+  color: #ea9981;
+  font-size: 40px;
+  @media (min-width: 992px) {
+    font-size: 72px;
+  }
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
 body {
   background-color: black;
 }
@@ -28,7 +45,9 @@ h1 {
   font-size: 4Opx;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   font-family: "Playfair Display";
 }
 

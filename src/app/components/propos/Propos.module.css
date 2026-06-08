@@ -1,0 +1,15 @@
+@media (max-width: 991px) {
+  .borderMobile {
+    border-bottom: 1px solid black;
+  }
+}
+
+.numbers {
+  font-size: 64px;
+}
+
+@media (min-width: 992px) {
+  .numbers {
+    font-size: 96px;
+  }
+}
