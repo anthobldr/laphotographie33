@@ -1,0 +1,17 @@
+#partenaire, #prestations{
+    background-color: white;
+}
+
+#partenaire{
+    font-family: Playfair Display;
+}
+
+.prestationsBanner{
+    background-color: black;
+    color: white;
+}
+
+.prestationsTitle{
+    font-family: Montserrat;
+    letter-spacing: 5px;
+}
