@@ -1,4 +1,26 @@
 .footerTitle {
-  color: #e99981 !important;
-  font-size: 14px;
+  color: #e99981;
+  font-size: 16px;
+}
+
+.linkHoverAnimation {
+  position: relative;
+}
+
+.linkHoverAnimation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom center;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  height: 1px;
+  transition: transform 0.25s ease-out;
+}
+
+.linkHoverAnimation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
 }
