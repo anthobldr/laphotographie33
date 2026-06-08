@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import type { Metadata } from "next";
 import "./globals.css";
 import Script from 'next/script';
-import Navbar from './layouts/Navbar';
 
 export const metadata: Metadata = {
   title: "LAphotographie33",
