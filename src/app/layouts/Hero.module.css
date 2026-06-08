@@ -1,8 +1,28 @@
-.hero{
-    height: 100vh;
-    background-image: url("/public/images/hero-cover-accueil.png");
+.hero {
+    min-height: 100vh;
+
+    background-image: url("/images/hero-cover-accueil.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: right center;
 }
 
-.hero[data-route="/"] {
-    background-image: url("/public/images/hero-cover-accueil.png");
+.heroEnLight{
+    font-family: 'Miama';
+    color: #EA9981;
+    font-size: 72px;
+}
+
+.caroussel{
+    color: #FFF5EB;
+}
+
+.carousselButton{
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #EA9981;
+    border: 1px solid #FFF5EB;
 }
