@@ -25,12 +25,12 @@ export default function Footer() {
 
   const nav = [
     { id: 0, name: "Accueil", href: "/" },
-    { id: 1, name: "A propos", href: "/Apropos" },
-    { id: 2, name: "Préstation", href: "/Prestation" },
-    { id: 3, name: "Galerie", href: "/Galerie" },
-    { id: 4, name: "Contact", href: "/Contact" },
-    { id: 5, name: "Blog", href: "/Blog" },
-    { id: 6, name: "FAQ", href: "/FAQ" },
+    { id: 1, name: "A propos", href: "/propos" },
+    { id: 2, name: "Préstation", href: "/prestation" },
+    { id: 3, name: "Galerie", href: "/galerie" },
+    { id: 4, name: "Contact", href: "/contact" },
+    { id: 5, name: "Blog", href: "/blog" },
+    { id: 6, name: "FAQ", href: "/faq" },
   ];
 
   const theme = [
