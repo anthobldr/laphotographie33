@@ -1,9 +1,33 @@
 .hero {
-    min-height: 100vh;
-    background-image: url("/images/hero-cover-accueil.png");
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 25%;
+    background-position: center 25%;
+    z-index: -1;
+}
+
+.hero[data-route="/"] {
+    min-height: 100vh;
+}
+
+.hero[data-route="/"]::before {
+    background-image: url("/images/hero-cover-accueil.png");
+}
+
+.hero[data-route="/prestations"] {
+    min-height: 50vh;
+}
+
+.hero[data-route="/prestations"]::before {
+    background-image: url("/images/hero-cover-prestations.jpg");
+    transform: scaleX(-1);
 }
 
 .heroEnLight {
