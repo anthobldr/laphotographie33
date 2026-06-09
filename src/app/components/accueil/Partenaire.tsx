@@ -1,5 +1,5 @@
 import Image from "next/image"
-import style from "./css/Partenaire.module.css"
+import style from "./css/Accueil.module.css"
 
 const partenaires = [
   { src: "/images/partenaire/only_you.webp",     alt: "Logo Only You",     width: 150, height: 50 },

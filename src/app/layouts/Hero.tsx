@@ -60,7 +60,7 @@ export default function Hero(){
                 </div>
             </div>
             <div className="container-fluid pb-4">
-                <div className="d-flex justify-content-center gap-5">
+                <div className="d-none d-lg-flex justify-content-center gap-5">
                     {caroussel.map((button) =>
                         <div key={button.id} className={`d-flex flex-column align-items-center ${style.caroussel}`}>
                             <span className={`${style.carousselButton}`}>{""}</span>

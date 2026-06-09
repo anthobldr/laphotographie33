@@ -1,18 +1,17 @@
 import ButtonSecondary from "../ButtonSecondary";
-import style from "./css/Bento.module.css";
 
 const images = [
   { src: "/images/bento/photo8.jpg" },
   { src: "/images/bento/photo10.png" },
   { src: "/images/bento/photo11.png" },
   { src: "/images/bento/photo12.png" },
-  { src: "/images/bento/photos13.png" },
+  { src: "/images/bento/photo13.png" },
   { src: "/images/bento/photo14.png" },
 ];
 
 export default function Bento() {
   return (
-    <section id={style.accueilBento} className="container-fluid py-5">
+    <section className="container-fluid py-5">
         <h2 className="text-center text-white pb-5">Des instants vrais et spontanés</h2>
         <div className="container">
             <div className="row g-2 align-items-stretch">
