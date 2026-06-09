@@ -1,10 +1,10 @@
 import Hero from "./layouts/Hero";
 import Partenaire from "./components/accueil/Partenaire";
 import Bento from "./components/accueil/Bento";
-import Presentations from "./layouts/Prestations";
+import Prestations from "./layouts/PrestationsList";
 import Propos from "./components/accueil/Propos";
 import Instagram from "./components/accueil/Instagram";
-import Avis from "./components/accueil/Avis";
+import Avis from "./layouts/Avis";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <Partenaire />
       <Bento />
-      <Presentations />
+      <Prestations />
       <Propos />
       <hr />
       <Instagram />

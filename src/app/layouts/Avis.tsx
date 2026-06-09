@@ -1,4 +1,4 @@
-import ButtonPrimary from "../ButtonPrimary";
+import ButtonPrimary from "../components/ButtonPrimary";
 
 export default function Avis(){
     return (

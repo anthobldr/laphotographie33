@@ -13,14 +13,8 @@ const prestations = [
 function PrestationCard({ title, price, src, width, height, full }:{title:string, price:string, src:string, width:number, height:number, full:boolean}) {
   return (
     <div className={`col-12 ${full ? "" : "col-lg-6"}`}>
-      <Image
-        src={src}
-        className="w-100 object-fit-cover"
-        width={width}
-        height={height}
-        alt={title}
-      />
-      <div className={`py-2 d-flex justify-content-between ${style.prestationsBanner}`}>
+      <Image src={src} className="w-100 object-fit-cover" width={width} height={height} alt={title} />
+      <div className={`py-2 d-flex justify-content-between text-white ${style.prestationsBanner}`}>
         <span className={`ps-4 ${style.prestationsTitle}`}>{title}</span>
         <span className="pe-4">À partir de <b>{price}</b></span>
       </div>
@@ -28,20 +22,12 @@ function PrestationCard({ title, price, src, width, height, full }:{title:string
   )
 }
 
-export default function Prestations() {
+export default function PrestationsList() {
   return (
-    <section id={style.prestations} className="container-fluid pb-5">
-      <div className="container">
-        <div className="d-flex justify-content-between align-items-center py-5">
-          <h2 className="mb-0">Prestations photographiques</h2>
-          <ButtonSecondary text="VOIR PLUS" styleName="secondaryBlack" />
-        </div>
-        <div className="row g-4 justify-content-between">
-          {prestations.map((p) => (
-            <PrestationCard key={p.title} {...p} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <div className="row g-4 justify-content-between">
+      {prestations.map((p) => (
+        <PrestationCard key={p.title} {...p} />
+      ))}
+    </div>
   )
 }
