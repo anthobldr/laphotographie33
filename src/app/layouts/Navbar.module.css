@@ -2,3 +2,11 @@
     font-size: 20px;
     font-family: Playfair Display;
 }
+
+.navbarWhite .nav-link {
+  color: white !important;
+}
+
+.navbarBlack .nav-link {
+  color: black !important;
+}

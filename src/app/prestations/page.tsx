@@ -1,6 +1,7 @@
+import Hero from "../layouts/Hero";
 import Assurance from "../components/Prestations/Assurance";
 import Avis from "../layouts/Avis";
-import Hero from "../layouts/Hero";
+import Prestation from "./Prestations";
 import style from "@/app/layouts/Hero.module.css"
 export default function Prestations(){
     return (
@@ -24,7 +25,7 @@ export default function Prestations(){
         }
         />
         <Assurance />
-        
+        <Prestation />
         <Avis />
         </>
     )

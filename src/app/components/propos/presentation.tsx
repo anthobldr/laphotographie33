@@ -20,7 +20,7 @@ export default function Presentation() {
         </div>
 
         <div className="d-flex flex-column col-12 col-lg-6 gap-3 gap-lg-5 my-4 my-lg-0">
-          <h2 className="fs-3">La Photographie, comme un langage.</h2>
+          <h2 className="fs-3">La <span className="Miama">Photographie</span>, comme un langage.</h2>
           <div>
             <p>
               Photographe passionné depuis plus de 15 ans, je suis autodidacte
