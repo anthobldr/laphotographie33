@@ -58,11 +58,12 @@ export default function Footer() {
         <div className="row gy-5">
           <div className="col-12 col-lg-4 align-items-center align-items-lg-start  text-center text-lg-start">
             <Image
-              src="/icons/logo.svg"
-              width={169}
-              height={50}
+              src="/images/logo.webp"
+              width={486 / 3}
+              height={132 / 3}
               alt="Logo LAPhotographie33"
               loading="lazy"
+              style={{ filter: "invert(1)" }}
             />
 
             <p className="my-4 pe-4 fs-6">
