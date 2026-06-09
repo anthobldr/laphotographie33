@@ -1,5 +1,4 @@
 import Image from "next/image"
-import ButtonSecondary from "../components/ButtonSecondary"
 import style from "./Layouts.module.css"
 
 const prestations = [
@@ -14,7 +13,7 @@ function PrestationCard({ title, price, src, width, height, full }:{title:string
   return (
     <div className={`col-12 ${full ? "" : "col-lg-6"}`}>
       <Image src={src} className="w-100 object-fit-cover" width={width} height={height} alt={title} />
-      <div className={`py-2 d-flex justify-content-between text-white ${style.prestationsBanner}`}>
+      <div className={`py-2 d-flex justify-content-between text-white bg-black`}>
         <span className={`ps-4 ${style.prestationsTitle}`}>{title}</span>
         <span className="pe-4">À partir de <b>{price}</b></span>
       </div>
