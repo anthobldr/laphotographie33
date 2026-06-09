@@ -5,7 +5,7 @@ import ButtonSecondary from "../components/ButtonSecondary";
 import style from "./Navbar.module.css";
 export default function Navbar() {
   const pathname = usePathname();
-  const withePages = ["/propos"];
+  const withePages = ["/propos", "/blog"];
   const isWhiteNavbar = withePages.includes(pathname);
   const nav = [
     {

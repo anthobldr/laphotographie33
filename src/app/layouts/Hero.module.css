@@ -30,13 +30,24 @@
     color: white;
 }
 
+.hero[data-route="/blog"] {
+    min-height: 50vh;
+    color: white;
+}
+
 .hero[data-route="/prestations"]::before {
     background-image: url("/images/hero-cover-prestations.jpg");
     transform: scaleX(-1);
 }
+
 .hero[data-route="/propos"]::before {
     background-image: url("/images/hero-cover-propos.jpg");
 }
+
+.hero[data-route="/blog"]::before {
+    background-image: url("/images/hero-cover-blog.jpg");
+}
+
 .heroEnLight {
   font-family: "Miama";
   color: #ea9981;
