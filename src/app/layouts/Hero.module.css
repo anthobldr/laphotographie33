@@ -1,51 +1,60 @@
 .hero {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 25%;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  z-index: -1;
 }
 
 .hero[data-route="/"] {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .hero[data-route="/"]::before {
-    background-image: url("/images/hero-cover-accueil.png");
+  background-image: url("/images/hero-cover-accueil.png");
 }
 
 .hero[data-route="/prestations"] {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 .hero[data-route="/propos"] {
-    min-height: 50vh;
-    color: white;
+  min-height: 50vh;
+  color: white;
 }
 
 .hero[data-route="/blog"] {
-    min-height: 50vh;
-    color: white;
+  min-height: 50vh;
+  color: white;
+}
+
+.hero[data-route="/faq "] {
+  min-height: 50vh;
+  color: white;
 }
 
 .hero[data-route="/prestations"]::before {
-    background-image: url("/images/hero-cover-prestations.jpg");
-    transform: scaleX(-1);
+  background-image: url("/images/hero-cover-prestations.jpg");
+  transform: scaleX(-1);
 }
 
 .hero[data-route="/propos"]::before {
-    background-image: url("/images/hero-cover-propos.jpg");
+  background-image: url("/images/hero-cover-propos.jpg");
 }
 
 .hero[data-route="/blog"]::before {
-    background-image: url("/images/hero-cover-blog.jpg");
+  background-image: url("/images/hero-cover-blog.jpg");
+}
+
+.hero[data-route="/faq"]::before {
+  background-image: url("/images/hero-cover-faq.jpg");
 }
 
 .heroEnLight {

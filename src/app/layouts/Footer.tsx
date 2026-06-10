@@ -25,8 +25,8 @@ export default function Footer() {
 
   const nav = [
     { id: 0, name: "Accueil", href: "/" },
-    { id: 1, name: "A propos", href: "/propos" },
-    { id: 2, name: "Préstation", href: "/prestation" },
+    { id: 1, name: "À propos", href: "/propos" },
+    { id: 2, name: "Prestations", href: "/prestations" },
     { id: 3, name: "Galerie", href: "/galerie" },
     { id: 4, name: "Contact", href: "/contact" },
     { id: 5, name: "Blog", href: "/blog" },
