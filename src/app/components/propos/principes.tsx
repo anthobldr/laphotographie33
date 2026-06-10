@@ -21,6 +21,7 @@ export default function Principes() {
       desc: "Sélection rigoureuse, post-production sobre, livraison soignée. Le détail jusqu'au bout.",
     },
   ];
+
   return (
     <section className="p-5 bg-white">
       <div>
