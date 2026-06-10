@@ -1,0 +1,54 @@
+.backgroundExp {
+  background-color: #ea9981;
+}
+
+.roundedCustom {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ligne {
+  position: relative;
+}
+
+.ligne::after {
+  content: "";
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  background-color: #ea9981;
+  height: 90%;
+  width: 2px;
+  @media (min-width: 992px) {
+    top: 50%;
+    left: 50px;
+    height: 2px;
+    width: 70%;
+  }
+}
+
+.btnFaq {
+  width: 48px;
+  height: 48px;
+  border-radius: 0 7px 7px 0;
+  background-color: #ea9981;
+  border: none;
+}
+
+.faqQuestions {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.roundedFaq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px 0 0 7px;
+  height: 48px;
+  font-size: 16px;
+  width: 100%;
+}

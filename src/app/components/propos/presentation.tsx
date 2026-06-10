@@ -4,19 +4,13 @@ export default function Presentation() {
   return (
     <section className="m-3 p-3 m-lg-5 p-lg-5 text-white">
       <div className="row align-items-center">
-        <div className="col-12 col-lg-6">
-          <div
-            className="position-relative w-100"
-            style={{ aspectRatio: "647/828" }}
-          >
-            <Image
-              src="/images/propos/aurelien.png"
-              alt="Photo Aurélien"
-              fill
-              className="object-fit-cover"
-              loading="lazy"
-            />
-          </div>
+        <div className="col-12 col-lg-6 text-center mb-3 mb-lg-0">
+          <img
+            src="/images/propos/aurelien.png"
+            alt="Aurélien, photographe"
+            className="img-fluid"
+            loading="lazy"
+          />
         </div>
 
         <div className="d-flex flex-column col-12 col-lg-6 gap-3 gap-lg-5 my-4 my-lg-0">

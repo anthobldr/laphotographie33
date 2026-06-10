@@ -1,6 +1,12 @@
 import style from "./Propos.module.css";
 
 export default function Chiffres() {
+  const chiffres = [
+    { id: "1", number: "500", subject: "Séances Réalisées" },
+    { id: "2", number: "50.000", subject: "Photos Livrées" },
+    { id: "3", number: "15", subject: "Années d'Experience" },
+  ];
+
   return (
     <section className="p-5 text-white">
       <div>
@@ -9,31 +15,22 @@ export default function Chiffres() {
           des plus beaux instants.
         </h2>
       </div>
+
       <div className="d-flex flex-column flex-lg-row  my-5 justify-content-lg-evenly">
-        <div className="col-12 col-lg-4 p-3 p-md-5 text-center border  border-white ">
-          <h3 className={`mt-2 ls-2 ${style.numbers}`}>
-            500<i>+</i>
-          </h3>
-          <span className="fs-4 ls-2 PlayfairDisplay  text-white-50 text-uppercase">
-            Séances Réalisées
-          </span>
-        </div>
-        <div className="col-12 col-lg-4 p-3 p-md-5 text-center border  border-white">
-          <h3 className={`mt-2 ls-2 ${style.numbers}`}>
-            50.000<i>+</i>
-          </h3>
-          <span className="fs-4 ls-2 PlayfairDisplay  text-white-50 text-uppercase">
-            Photos Livrées
-          </span>
-        </div>
-        <div className="col-12 col-lg-4 p-3 p-md-5 text-center border  border-white">
-          <h3 className={`mt-2 ls-2 ${style.numbers}`}>
-            15<i>+</i>
-          </h3>
-          <span className="fs-4 ls-2 PlayfairDisplay text-white-50 text-uppercase">
-            Années d&#39;expérience
-          </span>
-        </div>
+        {chiffres.map((list) => (
+          <div
+            key={list.id}
+            className="col-12 col-lg-4 p-3 p-md-5 text-center border  border-white "
+          >
+            <h3 className={`mt-2 ls-2 ${style.numbers}`}>
+              {list.number}
+              <i>+</i>
+            </h3>
+            <span className="fs-4 ls-2 PlayfairDisplay  text-white-50 text-uppercase">
+              {list.subject}
+            </span>
+          </div>
+        ))}
       </div>
     </section>
   );
