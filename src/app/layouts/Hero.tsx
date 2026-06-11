@@ -6,48 +6,42 @@ import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import { ReactNode } from "react";
 
-export default function Hero({
-  title,
-  subtitle,
-}: {
-  title: ReactNode;
-  subtitle: ReactNode;
-}) {
-  const pathname = usePathname();
-  const caroussel = [
-    {
-      id: "1",
-      name: "Mariage",
-    },
-    {
-      id: "2",
-      name: "Maternité",
-    },
-    {
-      id: "3",
-      name: "Portrait",
-    },
-    {
-      id: "4",
-      name: "Animalier",
-    },
-    {
-      id: "5",
-      name: "Corporate",
-    },
-  ];
-  return (
-    <>
-      <div data-route={pathname} className={`${style.hero} d-flex flex-column`}>
-        <div className="container-fluid py-4">
-          <Navbar />
-        </div>
-        <div className="container-fluid flex-grow-1 d-flex align-items-center">
-          <div className="row w-100">
-            <div className="col-lg-6 ps-lg-5">
-              <h1 className={style.heroTitle}>{title}</h1>
+export default function Hero({title, subtitle}:{title: ReactNode, subtitle: ReactNode}){
+    const pathname = usePathname();
+    const caroussel = [
+        {
+            id: "1",
+            name: "Mariage"
+        },
+        {
+            id: "2",
+            name: "Maternité"
+        },
+        {
+            id: "3",
+            name: "Portrait"
+        },
+        {
+            id: "4",
+            name: "Animalier"
+        },
+        {
+            id: "5",
+            name: "Corporate"
+        },
+    ]
+    return (
+        <>
+        <div data-route={pathname} className={`${style.hero} d-flex flex-column`}>
+            <div className="container-fluid py-4">
+                <Navbar />
+            </div>
+            <div className="container-fluid flex-grow-1 d-flex align-items-center">
+                <div className="row w-100">
+                    <div className="col-lg-6 ps-lg-5">
+                        <h1>{title}</h1>
 
-              <p className={`${style.heroDescription} mt-5`}>{subtitle}</p>
+                        <p>{subtitle}</p>
 
               {pathname === "/" ? (
                 <div className="d-flex gap-3 mt-5">
