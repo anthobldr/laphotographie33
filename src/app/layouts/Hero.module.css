@@ -40,6 +40,12 @@
   color: white;
 }
 
+.hero[data-route="/prestations/mariage"]{
+    background-position: center 50%;
+    min-height: 50vh;
+    color: white;
+}
+
 .hero[data-route="/prestations"]::before {
   background-image: url("/images/hero-cover-prestations.jpg");
   transform: scaleX(-1);
@@ -55,6 +61,9 @@
 
 .hero[data-route="/faq"]::before {
   background-image: url("/images/hero-cover-faq.jpg");
+}
+.hero[data-route="/prestations/mariage"]::before{
+    background-image: url("/images/hero-cover-mariage.jpg");
 }
 
 .heroEnLight {
