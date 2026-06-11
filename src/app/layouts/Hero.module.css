@@ -35,7 +35,7 @@
   color: white;
 }
 
-.hero[data-route="/faq "] {
+.hero[data-route="/faq"] {
   min-height: 50vh;
   color: white;
 }

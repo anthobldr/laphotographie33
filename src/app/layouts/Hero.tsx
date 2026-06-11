@@ -39,9 +39,9 @@ export default function Hero({title, subtitle}:{title: ReactNode, subtitle: Reac
             <div className="container-fluid flex-grow-1 d-flex align-items-center">
                 <div className="row w-100">
                     <div className="col-lg-6 ps-lg-5">
-                        <h1 className={style.heroTitle}>{title}</h1>
+                        <h1>{title}</h1>
 
-                        <p className={`${style.heroDescription} mt-5`}>{subtitle}</p>
+                        <p>{subtitle}</p>
 
                         {pathname === "/" ? 
                         <div className="d-flex gap-3 mt-5">

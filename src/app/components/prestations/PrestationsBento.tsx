@@ -8,7 +8,7 @@ export default function PrestationsBento() {
         <div className="px-5">
             <div className="row g-1 mb-1" style={{ height: 280 }}>
                 <div className="col-6 h-100 overflow-hidden position-relative">
-                    <Image className="object-fit-cover border border-primary border-3" src="/images/bento/Photo2.jpg" alt="Couple dans la brume" fill />
+                    <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Couple dans la brume" fill />
                 </div>
                 <div className="col-4 h-100 overflow-hidden position-relative">
                     <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Mariée et demoiselles d'honneur" fill />

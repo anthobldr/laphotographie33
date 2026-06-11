@@ -9,10 +9,10 @@ export default function FAQ() {
       <Hero
         title={
           <>
-            <span className={style.heroEnLight}>FAQ</span>
+            <span className={`${style.heroEnLight}`}>FAQ</span>
           </>
         }
-        subtitle
+        subtitle=""
       />
       <Experience></Experience>
       <Question></Question>

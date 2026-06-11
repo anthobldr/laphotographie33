@@ -12,7 +12,7 @@ export default function AssuranceCard({cardsList}:{cardsList: Card[]}) {
         <div key={card.title} className="col-6 col-lg-3">
           <div className="text-center border rounded py-4 h-100">
             <div className="py-lg-3">
-              <Image src="/icons/camera.svg" width={50} height={50} alt="Icon de camera" />
+              <Image src={card.icon} width={50} height={50} alt="Icon de camera" />
             </div>
             <div className="d-flex flex-column gap-2">
               <h4 className="text-white">{card.title}</h4>
