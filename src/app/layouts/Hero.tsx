@@ -31,15 +31,22 @@ export default function Hero({title, subtitle}:{title: ReactNode, subtitle: Reac
 
                         <p>{subtitle}</p>
 
-                        {pathname === "/" ? 
-                        <div className="d-flex gap-3 mt-5">
-                            <ButtonPrimary text="DÉCOUVRIR MON TRAVAIL" styleName='primaryOrange'/>
-                            <ButtonSecondary text="CONTACT" styleName='secondaryWhite'/>
-                        </div> 
-                        : 
-                        ""}
-                    </div>
+              {pathname === "/" ? (
+                <div className="d-flex gap-3 mt-5">
+                  <ButtonPrimary
+                    text="DÉCOUVRIR MON TRAVAIL"
+                    styleName="primaryOrange"
+                    href="/galerie"
+                  />
+                  <ButtonSecondary
+                    text="CONTACT"
+                    styleName="secondaryBlack"
+                    href="/contact"
+                  />
                 </div>
+              ) : (
+                ""
+              )}
             </div>
             {pathname === "/" ?
                 <div className="container-fluid pb-4">

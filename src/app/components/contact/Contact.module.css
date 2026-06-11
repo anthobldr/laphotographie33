@@ -1,0 +1,27 @@
+.fontSizeBanner {
+  font-size: 12px;
+  @media (min-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+.fontSizeBannerChiffre {
+  font-size: 16px;
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+}
+.coloredText {
+  color: #ea9981;
+}
+
+.formCustomL {
+  border-radius: 8px 0 0 8px;
+}
+.formCustomR {
+  border-radius: 0 8px 8px 0;
+}
+
+.hidden {
+  display: none;
+}
