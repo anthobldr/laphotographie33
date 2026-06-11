@@ -1,3 +1,5 @@
+import style from "./Contact.module.css";
+
 export default function ChiffresContact() {
   const Chiffres = [
     { id: "1", chiffres: "15+", desc: "Ans à capturer vos émotions" },
@@ -13,9 +15,10 @@ export default function ChiffresContact() {
           key={list.id}
           className="col-6 border border-1 border-dark border-opacity-25 "
         >
-          <p className="PlayfairDisplay fs-1 m-0">
-            <b>{list.chiffres}</b> <br />
-            <span className="fs-5">{list.desc}</span>
+          <p className={`PlayfairDisplay ${style.fontSizeBannerChiffre} m-0`}>
+            <b>{list.chiffres}</b>
+            <br />
+            <span className={`${style.fontSizeBanner} `}>{list.desc}</span>
           </p>
         </div>
       ))}

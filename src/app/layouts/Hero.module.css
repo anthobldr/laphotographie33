@@ -35,15 +35,19 @@
   color: white;
 }
 
-.hero[data-route="/faq "] {
+.hero[data-route="/faq"] {
   min-height: 50vh;
   color: white;
 }
+.hero[data-route="/contact"] {
+  min-height: 50vh;
+  color: black;
+}
 
-.hero[data-route="/prestations/mariage"]{
-    background-position: center 50%;
-    min-height: 50vh;
-    color: white;
+.hero[data-route="/prestations/mariage"] {
+  background-position: center 50%;
+  min-height: 50vh;
+  color: white;
 }
 
 .hero[data-route="/prestations"]::before {
@@ -62,8 +66,11 @@
 .hero[data-route="/faq"]::before {
   background-image: url("/images/hero-cover-faq.jpg");
 }
-.hero[data-route="/prestations/mariage"]::before{
-    background-image: url("/images/hero-cover-mariage.jpg");
+.hero[data-route="/prestations/mariage"]::before {
+  background-image: url("/images/hero-cover-mariage.jpg");
+}
+.hero[data-route="/contact"]::before {
+  background-image: url("/images/hero-cover-contact.jpg");
 }
 
 .heroEnLight {
