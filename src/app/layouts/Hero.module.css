@@ -18,7 +18,8 @@
 }
 
 .hero[data-route="/"]::before {
-  background-image: url("/images/hero-cover-accueil.png");
+  background-image: var(--hero-bg, url("/images/hero-cover-accueil.png"));
+  transition: background-image 0.4s ease;
 }
 
 .hero[data-route="/prestations"] {
@@ -39,6 +40,9 @@
   min-height: 50vh;
   color: white;
 }
+.hero[data-route="/galerie"] {
+  min-height: 50vh;
+}
 
 .hero[data-route="/prestations/mariage"]{
     background-position: center 50%;
@@ -58,7 +62,9 @@
 .hero[data-route="/blog"]::before {
   background-image: url("/images/hero-cover-blog.jpg");
 }
-
+.hero[data-route="/galerie"]::before {
+  background-image: url("/images/hero-cover-galerie.jpg");
+}
 .hero[data-route="/faq"]::before {
   background-image: url("/images/hero-cover-faq.jpg");
 }
