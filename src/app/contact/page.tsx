@@ -2,6 +2,7 @@ import ChiffresContact from "../components/contact/ChiffresContact";
 import Partner from "../components/contact/Partner";
 import Hero from "../layouts/Hero";
 import heroStyle from "../layouts/Hero.module.css";
+import Formulaire from "../components/contact/Formulaire";
 
 export default function Contact() {
   return (
@@ -17,6 +18,7 @@ export default function Contact() {
         subtitle={""}
       />
       <ChiffresContact></ChiffresContact>
+      <Formulaire></Formulaire>
       <Partner></Partner>
     </>
   );
