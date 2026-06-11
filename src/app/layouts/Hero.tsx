@@ -1,10 +1,10 @@
 "use client";
-import { usePathname } from 'next/navigation';
-import style from "./Hero.module.css"
-import Navbar from "./Navbar"
-import ButtonPrimary from '../components/ButtonPrimary';
-import ButtonSecondary from '../components/ButtonSecondary';
-import { ReactNode } from 'react';
+import { usePathname } from "next/navigation";
+import style from "./Hero.module.css";
+import Navbar from "./Navbar";
+import ButtonPrimary from "../components/ButtonPrimary";
+import ButtonSecondary from "../components/ButtonSecondary";
+import { ReactNode } from "react";
 
 export default function Hero({title, subtitle}:{title: ReactNode, subtitle: ReactNode}){
     const pathname = usePathname();
@@ -43,30 +43,43 @@ export default function Hero({title, subtitle}:{title: ReactNode, subtitle: Reac
 
                         <p>{subtitle}</p>
 
-                        {pathname === "/" ? 
-                        <div className="d-flex gap-3 mt-5">
-                            <ButtonPrimary text="DÉCOUVRIR MON TRAVAIL" styleName='primaryOrange'/>
-                            <ButtonSecondary text="CONTACT" styleName='secondaryWhite'/>
-                        </div> 
-                        : 
-                        ""}
-                    </div>
+              {pathname === "/" ? (
+                <div className="d-flex gap-3 mt-5">
+                  <ButtonPrimary
+                    text="DÉCOUVRIR MON TRAVAIL"
+                    styleName="primaryOrange"
+                    href="/galerie"
+                  />
+                  <ButtonSecondary
+                    text="CONTACT"
+                    styleName="secondaryBlack"
+                    href="/contact"
+                  />
                 </div>
+              ) : (
+                ""
+              )}
             </div>
-            {pathname === "/" ? 
-            <div className="container-fluid pb-4">
-                <div className="d-none d-lg-flex justify-content-center gap-5">
-                    {caroussel.map((button) =>
-                        <div key={button.id} className={`d-flex flex-column align-items-center ${style.caroussel}`}>
-                            <span className={`${style.carousselButton}`}>{""}</span>
-                            {button.name}
-                        </div>
-                    )}
-                </div>
-            </div>
-            :
-            ""}
+          </div>
         </div>
-        </>
-    )
+        {pathname === "/" ? (
+          <div className="container-fluid pb-4">
+            <div className="d-none d-lg-flex justify-content-center gap-5">
+              {caroussel.map((button) => (
+                <div
+                  key={button.id}
+                  className={`d-flex flex-column align-items-center ${style.caroussel}`}
+                >
+                  <span className={`${style.carousselButton}`}>{""}</span>
+                  {button.name}
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
+      </div>
+    </>
+  );
 }

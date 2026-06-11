@@ -1,5 +1,5 @@
-import Image from "next/image"
-import ButtonPrimary from "../ButtonPrimary"
+import Image from "next/image";
+import ButtonPrimary from "../ButtonPrimary";
 
 export default function PrestationsBento() {
   return (
@@ -22,34 +22,78 @@ export default function PrestationsBento() {
                     </div>
                 </div>
             </div>
-            <div className="row g-1" style={{ height: 380 }}>
-                <div className="col-1 h-100 d-flex flex-column gap-1">
-                    <div className="flex-fill overflow-hidden position-relative">
-                        <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Préparatifs costume" fill />
-                    </div>
-                    <div className="flex-fill overflow-hidden position-relative">
-                        <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Danse lumières" fill />
-                    </div>
-                </div>
-                <div className="col-3 h-100 overflow-hidden position-relative">
-                    <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Alliances noir et blanc" fill />
-                </div>
-                <div className="col-5 h-100 overflow-hidden position-relative">
-                    <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Couple devant le château" fill />
-                </div>
-                <div className="col-3 h-100 d-flex flex-column gap-1">
-                    <div className="flex-fill overflow-hidden position-relative">
-                        <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Baiser lune" fill />
-                    </div>
-                    <div className="flex-fill overflow-hidden position-relative">
-                        <Image className="object-fit-cover" src="/images/bento/Photo2.jpg" alt="Couple dans l'escalier" fill />
-                    </div>
-                </div>
+            <div className="flex-fill overflow-hidden position-relative">
+              <Image
+                className="object-fit-cover"
+                src="/images/bento/Photo2.jpg"
+                alt="Couple au coucher de soleil"
+                fill
+              />
             </div>
-            <div className="text-center pt-5">
-                <ButtonPrimary text="EN SAVOIR PLUS" styleName="primaryOrange" />
-            </div>
+          </div>
         </div>
+        <div className="row g-1" style={{ height: 380 }}>
+          <div className="col-1 h-100 d-flex flex-column gap-1">
+            <div className="flex-fill overflow-hidden position-relative">
+              <Image
+                className="object-fit-cover"
+                src="/images/bento/Photo2.jpg"
+                alt="Préparatifs costume"
+                fill
+              />
+            </div>
+            <div className="flex-fill overflow-hidden position-relative">
+              <Image
+                className="object-fit-cover"
+                src="/images/bento/Photo2.jpg"
+                alt="Danse lumières"
+                fill
+              />
+            </div>
+          </div>
+          <div className="col-3 h-100 overflow-hidden position-relative">
+            <Image
+              className="object-fit-cover"
+              src="/images/bento/Photo2.jpg"
+              alt="Alliances noir et blanc"
+              fill
+            />
+          </div>
+          <div className="col-5 h-100 overflow-hidden position-relative">
+            <Image
+              className="object-fit-cover"
+              src="/images/bento/Photo2.jpg"
+              alt="Couple devant le château"
+              fill
+            />
+          </div>
+          <div className="col-3 h-100 d-flex flex-column gap-1">
+            <div className="flex-fill overflow-hidden position-relative">
+              <Image
+                className="object-fit-cover"
+                src="/images/bento/Photo2.jpg"
+                alt="Baiser lune"
+                fill
+              />
+            </div>
+            <div className="flex-fill overflow-hidden position-relative">
+              <Image
+                className="object-fit-cover"
+                src="/images/bento/Photo2.jpg"
+                alt="Couple dans l'escalier"
+                fill
+              />
+            </div>
+          </div>
+        </div>
+        <div className="text-center pt-5">
+          <ButtonPrimary
+            text="EN SAVOIR PLUS"
+            styleName="primaryOrange"
+            href=""
+          />
+        </div>
+      </div>
     </section>
-  )
+  );
 }

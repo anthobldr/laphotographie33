@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./Footer.module.css";
+import Link from "next/link";
 
 export default function Footer() {
   const socials = [
@@ -7,7 +8,7 @@ export default function Footer() {
       id: 0,
       name: "Instagram",
       picto: "/icons/instagram.svg",
-      href: "/icons/instagram.svg",
+      href: "https://www.instagram.com/aurelien_lambert",
     },
     {
       id: 1,
@@ -19,7 +20,7 @@ export default function Footer() {
       id: 2,
       name: "Facebook",
       picto: "/icons/facebook.svg",
-      href: "/icons/facebook.svg",
+      href: "https://www.facebook.com/LAphotographie33?mibextid=wwXIfr&rdid=j4nUvW3npZkVNYF1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16X9MSDiLo%2F%3Fmibextid%3DwwXIfr#",
     },
   ];
 
@@ -30,21 +31,23 @@ export default function Footer() {
     { id: 3, name: "Galerie", href: "/galerie" },
     { id: 4, name: "Contact", href: "/contact" },
     { id: 5, name: "Blog", href: "/blog" },
-    { id: 6, name: "FAQ", href: "/faq" },
   ];
 
   const theme = [
-    { id: 0, name: "Mariage", href: "/Mariage" },
-    { id: 1, name: "Maternité", href: "/Maternite" },
-    { id: 2, name: "Portraits", href: "/Portraits" },
-    { id: 3, name: "Animalier", href: "/Animalier" },
-    { id: 4, name: "Corporate", href: "/Corporate" },
+    { id: 0, name: "Mariage", href: "/prestations/mariage" },
+    { id: 1, name: "Maternité", href: "/prestations/maternite" },
+    { id: 2, name: "Portraits", href: "/prestations/portraits" },
+    { id: 3, name: "Animalier", href: "/prestations/animalier" },
+    { id: 4, name: "Corporate", href: "/prestations/corporate" },
   ];
   const info = [
-    { id: 0, name: "FAQ", href: "/Mariage" },
-    { id: 1, name: "Tarifs", href: "/Maternite" },
-    { id: 2, name: "Mentions Légales", href: "/Portraits" },
-    { id: 3, name: "Politique de confidentialité", href: "/Animalier" },
+    { id: 0, name: "FAQ", href: "/faq" },
+    { id: 2, name: "Mentions Légales", href: "/mentions-legales" },
+    {
+      id: 3,
+      name: "Politique de confidentialité",
+      href: "/politique-de-confidentialite",
+    },
   ];
   const contact = [
     { id: 0, name: "06 51 51 27 71", picto: "/icons/phone.svg" },
@@ -57,14 +60,16 @@ export default function Footer() {
       <div className="container-fluid">
         <div className="row gy-5">
           <div className="col-12 col-lg-4 align-items-center align-items-lg-start  text-center text-lg-start">
-            <Image
-              src="/images/logo.webp"
-              width={486 / 3}
-              height={132 / 3}
-              alt="Logo LAPhotographie33"
-              loading="lazy"
-              style={{ filter: "invert(1)" }}
-            />
+            <Link href={"/"}>
+              <Image
+                src="/images/logo.webp"
+                width={486 / 3}
+                height={132 / 3}
+                alt="Logo LAPhotographie33"
+                loading="lazy"
+                style={{ filter: "invert(1)" }}
+              />
+            </Link>
 
             <p className="my-4 pe-4 fs-6">
               Photographe professionnel à Bordeaux, je capture les émotions et
