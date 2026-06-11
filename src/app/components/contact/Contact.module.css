@@ -11,3 +11,17 @@
     font-size: 24px;
   }
 }
+.coloredText {
+  color: #ea9981;
+}
+
+.formCustomL {
+  border-radius: 8px 0 0 8px;
+}
+.formCustomR {
+  border-radius: 0 8px 8px 0;
+}
+
+.hidden {
+  display: none;
+}
