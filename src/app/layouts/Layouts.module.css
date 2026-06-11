@@ -1,0 +1,43 @@
+#ctaBanner {
+  position: relative;
+
+  height: 450px;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 60%,
+      #000 60%,
+      #000 100%
+    ),
+    url("/images/bento/photo10.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-bottom: 150px;
+}
+
+.ctaCard {
+  position: absolute;
+
+  left: 50%;
+  top: 60%;
+
+  transform: translate(-50%, -50%);
+
+  width: min(900px, 90%);
+
+  background: white;
+  border-radius: 15px;
+
+  padding: 4rem;
+
+  text-align: center;
+
+  z-index: 10;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
