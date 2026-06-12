@@ -42,6 +42,7 @@
 }
 .hero[data-route="/galerie"] {
   min-height: 50vh;
+}
 .hero[data-route="/contact"] {
   min-height: 50vh;
   color: black;
