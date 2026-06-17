@@ -1,5 +1,17 @@
 import Image from "next/image"
-export default function BlogSidebar({articles, articlesCounts}:{articles:[], articlesCounts:Record<string, number>}){
+export default function BlogSidebar({
+  articles,
+  articlesCounts,
+}: {
+  articles: {
+    img: string;
+    categorie: string;
+    title: string;
+    desc: string;
+    date: string;
+  }[];
+  articlesCounts: Record<string, number>;
+}) {
     return(
         <div className="col-4 d-none d-lg-block">
             <div className="sticky-top">
