@@ -159,10 +159,10 @@ export default function Formulaire() {
                 <option value="05">Autre</option>
               </select>
               <textarea
-                class="py-3 form-control"
+                className="py-3 form-control"
                 placeholder="Attentes Spécifiques"
                 id="textArea"
-                rows="3"
+                rows={3}
               ></textarea>
               <div className="d-flex row gap-5  py-3">
                 <ButtonPrimary
